@@ -1,6 +1,8 @@
 @media screen and (min-width: 1240px) {
   body {
     div.container {
+      width: 1310px;
+      margin: 0 auto;
       nav.navigation {
         button.burger-btn {
           display: none;
@@ -33,11 +35,67 @@
           grid-template-columns: 1fr 1fr;
           padding-bottom: 0;
           div.left {
-            padding: 15vh;
+            padding: 2vh;
+            padding-top: 15vh;
+            padding-right: 5vh;
             padding-bottom: 20px;
             h1.title {
               font-size: 2.5em;
             }
+            p {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+          div.right {
+            img {
+              border-top-right-radius: 100px;
+            }
+          }
+        }
+
+        section.offers {
+          div.offers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            div.offer {
+              display: grid;
+              //   grid-template-columns: max-content 1fr;
+            }
+          }
+        }
+
+        section.meet-yemi {
+          display: grid;
+          padding: 4em $padding;
+          grid-template-columns: 1fr 1fr;
+          div.img-container {
+            padding: 0;
+            img {
+              width: 380px;
+            }
+          }
+
+          div.details {
+            h2.title {
+              font-size: 2em;
+            }
+
+            p {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+        }
+        section.contact {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+          div.left {
+            h2.title {
+              font-size: 32px;
+            }
+
             p {
               font-size: 18px;
               line-height: 28px;

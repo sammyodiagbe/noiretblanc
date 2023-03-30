@@ -121,10 +121,8 @@ body {
       }
 
       section.offers {
-        background: #222;
-        color: #fff;
         padding: $padding;
-        padding: 2.5em 0;
+        padding: 4em $padding;
         h2.title {
           margin-bottom: $padding;
           text-align: center;
@@ -135,7 +133,7 @@ body {
           h2,
           p,
           h3 {
-            margin-bottom: $padding;
+            margin-bottom: 0.7em;
           }
           h2.number {
             font-size: 2em;
@@ -163,8 +161,6 @@ body {
       }
 
       section.contact {
-        background: #0d0d14;
-        color: #fff;
         padding: 2.5em 0;
         div.left,
         div.right {
@@ -185,18 +181,20 @@ body {
             }
 
             div.input-container {
-              padding-bottom: $padding;
+              margin-bottom: 1.5em;
               input,
               textarea {
+                border-radius: 12px;
                 resize: none;
                 width: 100%;
                 font-size: 1em;
                 padding: 1.3em $padding;
-                background-color: #2a2a36;
-                color: #fff;
+                background-color: #eee;
               }
 
               button {
+                border-radius: 12px;
+
                 padding: 1.3em $padding;
                 font-size: 1em;
                 width: 100%;

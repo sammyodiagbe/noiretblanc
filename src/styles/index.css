@@ -48,8 +48,11 @@ body footer.footer ul li {
 
 body nav.navigation {
   padding: 1em;
-  background: #222;
+  background: #14213d;
   color: #fff;
+}
+
+body nav.navigation div.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,11 +68,11 @@ body nav.navigation {
   left: 0;
 }
 
-body nav.navigation svg.burger {
+body nav.navigation div.container svg.burger {
   width: 30px;
 }
 
-body nav.navigation button.close-btn {
+body nav.navigation div.container button.close-btn {
   position: fixed;
   right: 15px;
   top: 5px;
@@ -79,7 +82,7 @@ body nav.navigation button.close-btn {
   color: #fff;
 }
 
-body nav.navigation div.subnav {
+body nav.navigation div.container div.subnav {
   position: fixed;
   left: 0;
   top: 0;
@@ -94,24 +97,24 @@ body nav.navigation div.subnav {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-body nav.navigation div.subnav.show-menu {
+body nav.navigation div.container div.subnav.show-menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   top: 0;
 }
 
-body nav.navigation div.subnav ul {
+body nav.navigation div.container div.subnav ul {
   background: #fff;
   width: 70vw;
   height: 100vh;
 }
 
-body nav.navigation div.subnav ul li {
+body nav.navigation div.container div.subnav ul li {
   list-style: none;
   display: block;
 }
 
-body nav.navigation div.subnav ul li a {
+body nav.navigation div.container div.subnav ul li a {
   display: block;
   padding: 1em 0.8em;
   color: #fff;
@@ -121,30 +124,36 @@ body nav.navigation div.subnav ul li a {
 }
 
 body main.main-content section.introduction {
+  background: #14213d;
+  color: #fff;
+}
+
+body main.main-content section.introduction div.container {
   padding: 1em 0;
 }
 
-body main.main-content section.introduction div.left {
+body main.main-content section.introduction div.container div.left {
   padding: 1em;
 }
 
-body main.main-content section.introduction div.left h1.title,
-body main.main-content section.introduction div.left p,
-body main.main-content section.introduction div.left a {
+body main.main-content section.introduction div.container div.left h1.title,
+body main.main-content section.introduction div.container div.left p,
+body main.main-content section.introduction div.container div.left a {
   margin-bottom: 1em;
 }
 
-body main.main-content section.introduction div.left p {
+body main.main-content section.introduction div.container div.left p {
   line-height: 24px;
 }
 
-body main.main-content section.introduction div.left a {
+body main.main-content section.introduction div.container div.left a {
   display: inline-block;
   padding: 1em;
-  background: #222;
+  background: #3a86ff;
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
+  font-weight: bold;
 }
 
 body main.main-content section.offers {
@@ -235,17 +244,17 @@ body main.main-content section.contact div.right form.contact-form div.input-con
 }
 
 @media screen and (min-width: 1240px) {
-  body {
+  body div.container {
     width: 1310px;
     margin: 0 auto;
   }
-  body nav.navigation button.burger-btn {
+  body nav.navigation div.container button.burger-btn {
     display: none;
   }
-  body nav.navigation button.close-btn {
+  body nav.navigation div.container button.close-btn {
     display: none;
   }
-  body nav.navigation div.subnav {
+  body nav.navigation div.container div.subnav {
     position: static;
     height: auto;
     width: auto;
@@ -253,39 +262,40 @@ body main.main-content section.contact div.right form.contact-form div.input-con
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-  body nav.navigation div.subnav ul {
+  body nav.navigation div.container div.subnav ul {
     height: auto;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     background: transparent;
   }
-  body nav.navigation div.subnav ul li {
+  body nav.navigation div.container div.subnav ul li {
     display: inline-block;
   }
-  body main.main-content section.introduction {
-    background: url(../assets/background-image.svg);
+  body main.main-content section.introduction div.container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     padding-bottom: 0;
   }
-  body main.main-content section.introduction div.left {
+  body main.main-content section.introduction div.container div.left {
     padding: 2vh;
     padding-top: 15vh;
     padding-right: 5vh;
     padding-bottom: 20px;
   }
-  body main.main-content section.introduction div.left h1.title {
+  body main.main-content section.introduction div.container div.left h1.title {
     font-size: 2.5em;
   }
-  body main.main-content section.introduction div.left p {
+  body main.main-content section.introduction div.container div.left p {
     font-size: 18px;
     line-height: 28px;
   }
-  body main.main-content section.introduction div.right img {
+  body main.main-content section.introduction div.container div.right img {
     border-top-right-radius: 100px;
+    position: relative;
+    top: 50px;
   }
   body main.main-content section.offers div.offers {
     display: -ms-grid;

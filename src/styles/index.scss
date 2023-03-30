@@ -42,53 +42,55 @@ body {
   }
   nav.navigation {
     padding: $padding;
-    background: #222;
+    background: #14213d;
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    left: 0;
-    svg.burger {
-      width: 30px;
-    }
-    button.close-btn {
-      position: fixed;
-      right: 15px;
-      top: 5px;
-      padding: 0.8em;
-      background: transparent;
-      font-size: 2.8em;
-      color: #fff;
-    }
-    div.subnav {
-      position: fixed;
-      left: 0;
+    div.container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
       top: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.8);
-      transform: translateX(100%);
-      transition: transform 0.5s;
-      &.show-menu {
-        transform: translateX(0);
-        top: 0;
+      left: 0;
+      svg.burger {
+        width: 30px;
       }
-      ul {
-        background: #fff;
-        width: 70vw;
+      button.close-btn {
+        position: fixed;
+        right: 15px;
+        top: 5px;
+        padding: 0.8em;
+        background: transparent;
+        font-size: 2.8em;
+        color: #fff;
+      }
+      div.subnav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
         height: 100vh;
-        li {
-          list-style: none;
-          display: block;
-          a {
+        background: rgba(0, 0, 0, 0.8);
+        transform: translateX(100%);
+        transition: transform 0.5s;
+        &.show-menu {
+          transform: translateX(0);
+          top: 0;
+        }
+        ul {
+          background: #fff;
+          width: 70vw;
+          height: 100vh;
+          li {
+            list-style: none;
             display: block;
-            padding: 1em 0.8em;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: bold;
+            a {
+              display: block;
+              padding: 1em 0.8em;
+              color: #fff;
+              text-decoration: none;
+              font-size: 1.1em;
+              font-weight: bold;
+            }
           }
         }
       }
@@ -97,25 +99,30 @@ body {
 
   main.main-content {
     section.introduction {
-      padding: $padding 0;
-      div.left {
-        padding: $padding;
-        h1.title,
-        p,
-        a {
-          margin-bottom: $padding;
-        }
-        p {
-          line-height: 24px;
-        }
-
-        a {
-          display: inline-block;
+      background: #14213d;
+      color: #fff;
+      div.container {
+        padding: $padding 0;
+        div.left {
           padding: $padding;
-          background: #222;
-          color: #fff;
-          text-decoration: none;
-          border-radius: $border-radius;
+          h1.title,
+          p,
+          a {
+            margin-bottom: $padding;
+          }
+          p {
+            line-height: 24px;
+          }
+
+          a {
+            display: inline-block;
+            padding: $padding;
+            background: #3a86ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: $border-radius;
+            font-weight: bold;
+          }
         }
       }
     }

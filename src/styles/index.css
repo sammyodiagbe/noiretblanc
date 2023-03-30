@@ -23,7 +23,7 @@ body img {
   height: auto;
 }
 
-body div.container footer.footer {
+body footer.footer {
   padding: 1.5em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,18 +36,20 @@ body div.container footer.footer {
           align-items: center;
 }
 
-body div.container footer.footer svg {
+body footer.footer svg {
   width: 35px;
 }
 
-body div.container footer.footer ul li {
+body footer.footer ul li {
   list-style: none;
   display: inline;
   padding: 0 0.2em;
 }
 
-body div.container nav.navigation {
+body nav.navigation {
   padding: 1em;
+  background: #222;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,14 +63,13 @@ body div.container nav.navigation {
   position: sticky;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.9);
 }
 
-body div.container nav.navigation svg.burger {
+body nav.navigation svg.burger {
   width: 30px;
 }
 
-body div.container nav.navigation button.close-btn {
+body nav.navigation button.close-btn {
   position: fixed;
   right: 15px;
   top: 5px;
@@ -78,7 +79,7 @@ body div.container nav.navigation button.close-btn {
   color: #fff;
 }
 
-body div.container nav.navigation div.subnav {
+body nav.navigation div.subnav {
   position: fixed;
   left: 0;
   top: 0;
@@ -93,51 +94,51 @@ body div.container nav.navigation div.subnav {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-body div.container nav.navigation div.subnav.show-menu {
+body nav.navigation div.subnav.show-menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   top: 0;
 }
 
-body div.container nav.navigation div.subnav ul {
+body nav.navigation div.subnav ul {
   background: #fff;
   width: 70vw;
   height: 100vh;
 }
 
-body div.container nav.navigation div.subnav ul li {
+body nav.navigation div.subnav ul li {
   list-style: none;
   display: block;
 }
 
-body div.container nav.navigation div.subnav ul li a {
+body nav.navigation div.subnav ul li a {
   display: block;
   padding: 1em 0.8em;
-  color: black;
+  color: #fff;
   text-decoration: none;
   font-size: 1.1em;
   font-weight: bold;
 }
 
-body div.container main.main-content section.introduction {
+body main.main-content section.introduction {
   padding: 1em 0;
 }
 
-body div.container main.main-content section.introduction div.left {
+body main.main-content section.introduction div.left {
   padding: 1em;
 }
 
-body div.container main.main-content section.introduction div.left h1.title,
-body div.container main.main-content section.introduction div.left p,
-body div.container main.main-content section.introduction div.left a {
+body main.main-content section.introduction div.left h1.title,
+body main.main-content section.introduction div.left p,
+body main.main-content section.introduction div.left a {
   margin-bottom: 1em;
 }
 
-body div.container main.main-content section.introduction div.left p {
+body main.main-content section.introduction div.left p {
   line-height: 24px;
 }
 
-body div.container main.main-content section.introduction div.left a {
+body main.main-content section.introduction div.left a {
   display: inline-block;
   padding: 1em;
   background: #222;
@@ -146,76 +147,76 @@ body div.container main.main-content section.introduction div.left a {
   border-radius: 10px;
 }
 
-body div.container main.main-content section.offers {
+body main.main-content section.offers {
   padding: 1em;
   padding: 4em 1em;
 }
 
-body div.container main.main-content section.offers h2.title {
+body main.main-content section.offers h2.title {
   margin-bottom: 1em;
   text-align: center;
 }
 
-body div.container main.main-content section.offers div.offer {
+body main.main-content section.offers div.offer {
   text-align: center;
 }
 
-body div.container main.main-content section.offers div.offer h2,
-body div.container main.main-content section.offers div.offer p,
-body div.container main.main-content section.offers div.offer h3 {
+body main.main-content section.offers div.offer h2,
+body main.main-content section.offers div.offer p,
+body main.main-content section.offers div.offer h3 {
   margin-bottom: 0.7em;
 }
 
-body div.container main.main-content section.offers div.offer h2.number {
+body main.main-content section.offers div.offer h2.number {
   font-size: 2em;
 }
 
-body div.container main.main-content section.meet-yemi {
+body main.main-content section.meet-yemi {
   padding: 2.5em 1em;
 }
 
-body div.container main.main-content section.meet-yemi div.img-container {
+body main.main-content section.meet-yemi div.img-container {
   padding: 1.5em 1em;
   text-align: center;
 }
 
-body div.container main.main-content section.meet-yemi div.img-container img {
+body main.main-content section.meet-yemi div.img-container img {
   border-radius: 15px;
 }
 
-body div.container main.main-content section.meet-yemi div.details {
+body main.main-content section.meet-yemi div.details {
   text-align: center;
 }
 
-body div.container main.main-content section.meet-yemi div.details h2.title {
+body main.main-content section.meet-yemi div.details h2.title {
   margin-bottom: 1em;
 }
 
-body div.container main.main-content section.contact {
+body main.main-content section.contact {
   padding: 2.5em 0;
 }
 
-body div.container main.main-content section.contact div.left,
-body div.container main.main-content section.contact div.right {
+body main.main-content section.contact div.left,
+body main.main-content section.contact div.right {
   padding: 1em;
 }
 
-body div.container main.main-content section.contact div.left h2.title,
-body div.container main.main-content section.contact div.right h2.title {
+body main.main-content section.contact div.left h2.title,
+body main.main-content section.contact div.right h2.title {
   margin-bottom: 1em;
 }
 
-body div.container main.main-content section.contact div.left p,
-body div.container main.main-content section.contact div.right p {
+body main.main-content section.contact div.left p,
+body main.main-content section.contact div.right p {
   line-height: 24px;
 }
 
-body div.container main.main-content section.contact div.right form.contact-form div.input-container {
+body main.main-content section.contact div.right form.contact-form div.input-container {
   margin-bottom: 1.5em;
 }
 
-body div.container main.main-content section.contact div.right form.contact-form div.input-container input,
-body div.container main.main-content section.contact div.right form.contact-form div.input-container textarea {
+body main.main-content section.contact div.right form.contact-form div.input-container input,
+body main.main-content section.contact div.right form.contact-form div.input-container textarea {
   border-radius: 12px;
   resize: none;
   width: 100%;
@@ -224,7 +225,7 @@ body div.container main.main-content section.contact div.right form.contact-form
   background-color: #eee;
 }
 
-body div.container main.main-content section.contact div.right form.contact-form div.input-container button {
+body main.main-content section.contact div.right form.contact-form div.input-container button {
   border-radius: 12px;
   padding: 1.3em 1em;
   font-size: 1em;
@@ -234,17 +235,17 @@ body div.container main.main-content section.contact div.right form.contact-form
 }
 
 @media screen and (min-width: 1240px) {
-  body div.container {
+  body {
     width: 1310px;
     margin: 0 auto;
   }
-  body div.container nav.navigation button.burger-btn {
+  body nav.navigation button.burger-btn {
     display: none;
   }
-  body div.container nav.navigation button.close-btn {
+  body nav.navigation button.close-btn {
     display: none;
   }
-  body div.container nav.navigation div.subnav {
+  body nav.navigation div.subnav {
     position: static;
     height: auto;
     width: auto;
@@ -252,17 +253,17 @@ body div.container main.main-content section.contact div.right form.contact-form
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-  body div.container nav.navigation div.subnav ul {
+  body nav.navigation div.subnav ul {
     height: auto;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     background: transparent;
   }
-  body div.container nav.navigation div.subnav ul li {
+  body nav.navigation div.subnav ul li {
     display: inline-block;
   }
-  body div.container main.main-content section.introduction {
+  body main.main-content section.introduction {
     background: url(../assets/background-image.svg);
     display: -ms-grid;
     display: grid;
@@ -270,63 +271,63 @@ body div.container main.main-content section.contact div.right form.contact-form
         grid-template-columns: 1fr 1fr;
     padding-bottom: 0;
   }
-  body div.container main.main-content section.introduction div.left {
+  body main.main-content section.introduction div.left {
     padding: 2vh;
     padding-top: 15vh;
     padding-right: 5vh;
     padding-bottom: 20px;
   }
-  body div.container main.main-content section.introduction div.left h1.title {
+  body main.main-content section.introduction div.left h1.title {
     font-size: 2.5em;
   }
-  body div.container main.main-content section.introduction div.left p {
+  body main.main-content section.introduction div.left p {
     font-size: 18px;
     line-height: 28px;
   }
-  body div.container main.main-content section.introduction div.right img {
+  body main.main-content section.introduction div.right img {
     border-top-right-radius: 100px;
   }
-  body div.container main.main-content section.offers div.offers {
+  body main.main-content section.offers div.offers {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  body div.container main.main-content section.offers div.offers div.offer {
+  body main.main-content section.offers div.offers div.offer {
     display: -ms-grid;
     display: grid;
   }
-  body div.container main.main-content section.meet-yemi {
+  body main.main-content section.meet-yemi {
     display: -ms-grid;
     display: grid;
     padding: 4em 1em;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  body div.container main.main-content section.meet-yemi div.img-container {
+  body main.main-content section.meet-yemi div.img-container {
     padding: 0;
   }
-  body div.container main.main-content section.meet-yemi div.img-container img {
+  body main.main-content section.meet-yemi div.img-container img {
     width: 380px;
   }
-  body div.container main.main-content section.meet-yemi div.details h2.title {
+  body main.main-content section.meet-yemi div.details h2.title {
     font-size: 2em;
   }
-  body div.container main.main-content section.meet-yemi div.details p {
+  body main.main-content section.meet-yemi div.details p {
     font-size: 18px;
     line-height: 28px;
   }
-  body div.container main.main-content section.contact {
+  body main.main-content section.contact {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
-  body div.container main.main-content section.contact div.left h2.title {
+  body main.main-content section.contact div.left h2.title {
     font-size: 32px;
   }
-  body div.container main.main-content section.contact div.left p {
+  body main.main-content section.contact div.left p {
     font-size: 18px;
     line-height: 28px;
   }

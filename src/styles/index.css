@@ -48,7 +48,7 @@ body footer.footer ul li {
 
 body nav.navigation {
   padding: 1em;
-  background: #14213d;
+  background: #0d1b2a;
   color: #fff;
 }
 
@@ -124,7 +124,7 @@ body nav.navigation div.container div.subnav ul li a {
 }
 
 body main.main-content section.introduction {
-  background: #14213d;
+  background: #0d1b2a;
   color: #fff;
 }
 
@@ -280,7 +280,6 @@ body main.main-content section.contact div.right form.contact-form div.input-con
     padding-bottom: 0;
   }
   body main.main-content section.introduction div.container div.left {
-    padding: 2vh;
     padding-top: 15vh;
     padding-right: 5vh;
     padding-bottom: 20px;
@@ -290,7 +289,7 @@ body main.main-content section.contact div.right form.contact-form div.input-con
   }
   body main.main-content section.introduction div.container div.left p {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 32px;
   }
   body main.main-content section.introduction div.container div.right img {
     border-top-right-radius: 100px;

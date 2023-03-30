@@ -21,7 +21,7 @@ function App() {
             <div className="left">
               <h1 className="title">
                 Professional Accounting and Bookeeping Services for your
-                business
+                business.
               </h1>
               <p>
                 Our team of highly Skilled accounting and financial professional

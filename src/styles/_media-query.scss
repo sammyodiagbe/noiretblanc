@@ -1,0 +1,50 @@
+@media screen and (min-width: 1240px) {
+  body {
+    div.container {
+      nav.navigation {
+        button.burger-btn {
+          display: none;
+        }
+
+        button.close-btn {
+          display: none;
+        }
+
+        div.subnav {
+          position: static;
+          height: auto;
+          width: auto;
+          background-color: transparent;
+          transform: translate(0);
+          ul {
+            height: auto;
+            width: max-content;
+            background: transparent;
+            li {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      main.main-content {
+        section.introduction {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-bottom: 0;
+          div.left {
+            padding: 15vh;
+            padding-bottom: 20px;
+            h1.title {
+              font-size: 2.5em;
+            }
+            p {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

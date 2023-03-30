@@ -235,4 +235,49 @@ body div.container main.main-content section.contact div.right form.contact-form
   background: #222;
   color: #fff;
 }
+
+@media screen and (min-width: 1240px) {
+  body div.container nav.navigation button.burger-btn {
+    display: none;
+  }
+  body div.container nav.navigation button.close-btn {
+    display: none;
+  }
+  body div.container nav.navigation div.subnav {
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  body div.container nav.navigation div.subnav ul {
+    height: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    background: transparent;
+  }
+  body div.container nav.navigation div.subnav ul li {
+    display: inline-block;
+  }
+  body div.container main.main-content section.introduction {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+  }
+  body div.container main.main-content section.introduction div.left {
+    padding: 15vh;
+    padding-bottom: 20px;
+  }
+  body div.container main.main-content section.introduction div.left h1.title {
+    font-size: 2.5em;
+  }
+  body div.container main.main-content section.introduction div.left p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

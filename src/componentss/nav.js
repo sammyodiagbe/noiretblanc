@@ -9,6 +9,7 @@ const Nav = () => {
       <button
         onClick={() => setShowMenu(true)}
         style={{ opacity: showmenu && "0.3" }}
+        className="burger-btn"
       >
         <BurgerMenu />
       </button>

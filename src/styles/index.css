@@ -263,6 +263,7 @@ body div.container main.main-content section.contact div.right form.contact-form
     display: inline-block;
   }
   body div.container main.main-content section.introduction {
+    background: url(../assets/background-image.svg);
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;

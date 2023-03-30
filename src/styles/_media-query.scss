@@ -31,6 +31,8 @@
 
       main.main-content {
         section.introduction {
+          background: url(../assets/background-image.svg);
+
           display: grid;
           grid-template-columns: 1fr 1fr;
           padding-bottom: 0;

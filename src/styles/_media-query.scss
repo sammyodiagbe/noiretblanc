@@ -41,10 +41,11 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           padding-bottom: 0;
+          padding-bottom: 5vh;
+
           div.left {
             padding-top: 15vh;
             padding-right: 5vh;
-            padding-bottom: 20px;
             h1.title {
               font-size: 2.5em;
             }
@@ -54,10 +55,9 @@
             }
           }
           div.right {
+            padding-top: 15vh;
             img {
-              border-top-right-radius: 100px;
-              position: relative;
-              top: 50px;
+              width: 700px;
             }
           }
         }

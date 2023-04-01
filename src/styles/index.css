@@ -282,11 +282,11 @@ body main.main-content section.contact div.right form.contact-form div.input-con
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     padding-bottom: 0;
+    padding-bottom: 5vh;
   }
   body main.main-content section.introduction div.container div.left {
     padding-top: 15vh;
     padding-right: 5vh;
-    padding-bottom: 20px;
   }
   body main.main-content section.introduction div.container div.left h1.title {
     font-size: 2.5em;
@@ -295,10 +295,11 @@ body main.main-content section.contact div.right form.contact-form div.input-con
     font-size: 18px;
     line-height: 32px;
   }
+  body main.main-content section.introduction div.container div.right {
+    padding-top: 15vh;
+  }
   body main.main-content section.introduction div.container div.right img {
-    border-top-right-radius: 100px;
-    position: relative;
-    top: 50px;
+    width: 700px;
   }
   body main.main-content section.offers div.offers {
     display: -ms-grid;

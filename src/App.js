@@ -2,7 +2,7 @@ import FacebookIcon from "./componentss/facebook";
 import InstagramIcon from "./componentss/instagram";
 import TwitterIcon from "./componentss/twiitter";
 import { useState } from "react";
-import image from "./assets/image.png";
+import image from "./assets/header-image.png";
 import yemiImage from "./assets/Headshot.JPG";
 import Nav from "./componentss/nav";
 import "./App.css";

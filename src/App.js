@@ -4,6 +4,7 @@ import TwitterIcon from "./componentss/twiitter";
 import { useState } from "react";
 import image from "./assets/header-image.png";
 import yemiImage from "./assets/Headshot.JPG";
+import womamImage from "./assets/woman-business.png";
 import Nav from "./componentss/nav";
 import "./App.css";
 
@@ -37,43 +38,49 @@ function App() {
         </section>
         <section className="offers">
           <div className="container">
-            <h2 className="title">What we offer.</h2>
-            <div className="offers">
-              <div className="offer">
-                <h2 className="number">01</h2>
-                <div className="details">
-                  <h3>Accounting System Setup</h3>
-                  <p>
-                    Business process automation for small and large businesses.
-                  </p>
+            <div className="left">
+              <img src={womamImage} alt="Strong woman business" />
+            </div>
+            <div className="right">
+              <h2 className="title">What we offer.</h2>
+              <div className="offers">
+                <div className="offer">
+                  <h2 className="number">01</h2>
+                  <div className="details">
+                    <h3>Accounting System Setup</h3>
+                    <p>
+                      Business process automation for small and large
+                      businesses.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="offer">
-                <h2 className="number">02</h2>
-                <div className="details">
-                  <h3>Business Process Improvement</h3>
-                  <p>
-                    Advice and Research on how to save costs and grow your
-                    business.
-                  </p>
+                <div className="offer">
+                  <h2 className="number">02</h2>
+                  <div className="details">
+                    <h3>Business Process Improvement</h3>
+                    <p>
+                      Advice and Research on how to save costs and grow your
+                      business.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="offer">
-                <h2 className="number">03</h2>
-                <div className="details">
-                  <h3>Bookkeeping and Accounting</h3>
-                  <p>
-                    Accounts Receivable / Accounts Payable, Regular monthly
-                    enteries, Reconciliation of Bank and Credit card statements
-                    , Year-end close.
-                  </p>
+                <div className="offer">
+                  <h2 className="number">03</h2>
+                  <div className="details">
+                    <h3>Bookkeeping and Accounting</h3>
+                    <p>
+                      Accounts Receivable / Accounts Payable, Regular monthly
+                      enteries, Reconciliation of Bank and Credit card
+                      statements , Year-end close.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="offer">
-                <h2 className="number">04</h2>
-                <div className="details">
-                  <h3>Payroll</h3>
-                  <p>Payroll Processing</p>
+                <div className="offer">
+                  <h2 className="number">04</h2>
+                  <div className="details">
+                    <h3>Payroll</h3>
+                    <p>Payroll Processing</p>
+                  </div>
                 </div>
               </div>
             </div>

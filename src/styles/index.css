@@ -165,6 +165,13 @@ body main.main-content section.offers {
   padding: 4em 1em;
 }
 
+body main.main-content section.offers div.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
 body main.main-content section.offers h2.title {
   margin-bottom: 1em;
   text-align: center;
@@ -209,27 +216,27 @@ body main.main-content section.contact {
   padding: 2.5em 0;
 }
 
-body main.main-content section.contact div.left,
-body main.main-content section.contact div.right {
+body main.main-content section.contact div.container div.left,
+body main.main-content section.contact div.container div.right {
   padding: 1em;
 }
 
-body main.main-content section.contact div.left h2.title,
-body main.main-content section.contact div.right h2.title {
+body main.main-content section.contact div.container div.left h2.title,
+body main.main-content section.contact div.container div.right h2.title {
   margin-bottom: 1em;
 }
 
-body main.main-content section.contact div.left p,
-body main.main-content section.contact div.right p {
+body main.main-content section.contact div.container div.left p,
+body main.main-content section.contact div.container div.right p {
   line-height: 24px;
 }
 
-body main.main-content section.contact div.right form.contact-form div.input-container {
+body main.main-content section.contact div.container div.right form.contact-form div.input-container {
   margin-bottom: 1.5em;
 }
 
-body main.main-content section.contact div.right form.contact-form div.input-container input,
-body main.main-content section.contact div.right form.contact-form div.input-container textarea {
+body main.main-content section.contact div.container div.right form.contact-form div.input-container input,
+body main.main-content section.contact div.container div.right form.contact-form div.input-container textarea {
   border-radius: 12px;
   resize: none;
   width: 100%;
@@ -238,7 +245,7 @@ body main.main-content section.contact div.right form.contact-form div.input-con
   background-color: #eee;
 }
 
-body main.main-content section.contact div.right form.contact-form div.input-container button {
+body main.main-content section.contact div.container div.right form.contact-form div.input-container button {
   border-radius: 12px;
   padding: 1.3em 1em;
   font-size: 1em;
@@ -301,15 +308,46 @@ body main.main-content section.contact div.right form.contact-form div.input-con
   body main.main-content section.introduction div.container div.right img {
     width: 700px;
   }
-  body main.main-content section.offers div.offers {
+  body main.main-content section.offers div.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 500px;
+        grid-template-columns: 1fr 500px;
+  }
+  body main.main-content section.offers div.container div.left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main.main-content section.offers div.container div.left img {
+    width: 800px;
+  }
+  body main.main-content section.offers div.container div.right div.offers {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
-  body main.main-content section.offers div.offers div.offer {
-    display: -ms-grid;
-    display: grid;
+  body main.main-content section.offers div.container div.right div.offers div.offer {
+    background: #fff;
+    padding: 1em;
+    min-height: 250px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  body main.main-content section.offers div.container div.right div.offers div.offer:hover {
+    background: #0d1b2a;
+    color: #fff;
   }
   body main.main-content section.meet-yemi {
     display: -ms-grid;
@@ -331,17 +369,17 @@ body main.main-content section.contact div.right form.contact-form div.input-con
     font-size: 18px;
     line-height: 28px;
   }
-  body main.main-content section.contact {
+  body main.main-content section.contact div.container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
-  body main.main-content section.contact div.left h2.title {
+  body main.main-content section.contact div.container div.left h2.title {
     font-size: 32px;
   }
-  body main.main-content section.contact div.left p {
+  body main.main-content section.contact div.container div.left p {
     font-size: 18px;
     line-height: 28px;
   }

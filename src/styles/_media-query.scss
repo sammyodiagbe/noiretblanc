@@ -64,12 +64,38 @@
       }
 
       section.offers {
-        div.offers {
+        div.container {
           display: grid;
-          grid-template-columns: 1fr 1fr;
-          div.offer {
-            display: grid;
-            //   grid-template-columns: max-content 1fr;
+          grid-template-columns: 1fr 500px;
+
+          div.left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 800px;
+            }
+          }
+
+          div.right {
+            div.offers {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 30px;
+              div.offer {
+                background: #fff;
+                padding: 1em;
+                min-height: 250px;
+                border-radius: 10px;
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+                transition: all 0.4s;
+                &:hover {
+                  background: #0d1b2a;
+                  color: #fff;
+                }
+                //   grid-template-columns: max-content 1fr;
+              }
+            }
           }
         }
       }
@@ -97,17 +123,19 @@
         }
       }
       section.contact {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        div.left {
-          h2.title {
-            font-size: 32px;
-          }
+        div.container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+          div.left {
+            h2.title {
+              font-size: 32px;
+            }
 
-          p {
-            font-size: 18px;
-            line-height: 28px;
+            p {
+              font-size: 18px;
+              line-height: 28px;
+            }
           }
         }
       }

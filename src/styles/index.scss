@@ -110,10 +110,17 @@ body {
     section.introduction {
       background: #0d1b2a;
       color: #fff;
+
       div.container {
         padding: $padding 0;
         div.left {
           padding: $padding;
+          opacity: 0;
+          animation-name: fade-in;
+          animation-fill-mode: forwards;
+          animation-duration: 1.5s;
+          animation-delay: 0.5s;
+
           h1.title,
           p,
           a {
@@ -242,3 +249,9 @@ body {
 }
 
 @import "./media-query";
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}

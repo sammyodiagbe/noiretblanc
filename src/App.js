@@ -18,7 +18,7 @@ function App() {
     <>
       <Nav />
       <main className="main-content">
-        <section className="introduction">
+        <section className="introduction" id="introduction">
           <div className="container">
             <div className="left">
               <h1 className="title">
@@ -37,7 +37,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="offers">
+        <section className="offers" id="offers">
           <div className="container">
             <div className="left">
               <img src={sittingHuman} alt="Strong woman business" />
@@ -87,7 +87,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="contact">
+        <section className="contact" id="contact">
           <div className="container">
             <div className="left">
               <img
@@ -144,7 +144,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="meet-yemi">
+        <section className="meet-yemi" id="meet-yemi">
           <div className="img-container">
             <img
               src={yemiImage}

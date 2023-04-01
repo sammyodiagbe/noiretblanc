@@ -9,9 +9,14 @@
   font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   font-family: "Atkinson Hyperlegible", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body p {

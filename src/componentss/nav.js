@@ -20,16 +20,16 @@ const Nav = () => {
           </button>
           <ul className="nav">
             <li>
-              <a href="/">Home</a>
+              <a href="#introduction">Home</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="/contact-us">Contact us</a>
+              <a href="#contact">Contact us</a>
             </li>
             <li>
-              <a href="/our-team">Our team</a>
+              <a href="#meet-yemi">Our team</a>
             </li>
           </ul>
         </div>

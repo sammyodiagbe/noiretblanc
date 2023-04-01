@@ -11,10 +11,13 @@ $border-radius: 10px;
   outline: none;
   font-family: "Atkinson Hyperlegible", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 16px;
   font-family: "Atkinson Hyperlegible", sans-serif;
+  scroll-behavior: smooth;
 
   p {
     line-height: 24px;

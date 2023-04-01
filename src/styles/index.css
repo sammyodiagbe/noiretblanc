@@ -191,8 +191,8 @@ body main.main-content section.offers div.offer {
   padding: 1em;
   min-height: 250px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -362,8 +362,8 @@ body main.main-content section.contact div.container div.right form.contact-form
     padding: 1em;
     min-height: 250px;
     border-radius: 10px;
-    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }

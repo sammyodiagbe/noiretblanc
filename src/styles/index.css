@@ -186,7 +186,6 @@ body main.main-content section.offers h2.title {
 }
 
 body main.main-content section.offers div.offer {
-  text-align: center;
   background: #fff;
   padding: 1em;
   min-height: 250px;
@@ -333,8 +332,8 @@ body main.main-content section.contact div.container div.right form.contact-form
   body main.main-content section.offers div.container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 500px;
-        grid-template-columns: 1fr 500px;
+    -ms-grid-columns: 550px 1fr;
+        grid-template-columns: 550px 1fr;
   }
   body main.main-content section.offers div.container div.left {
     display: -webkit-box;
@@ -348,14 +347,14 @@ body main.main-content section.contact div.container div.right form.contact-form
             justify-content: center;
   }
   body main.main-content section.offers div.container div.left img {
-    width: 550px;
+    width: 500px;
   }
   body main.main-content section.offers div.container div.right div.offers {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
   }
   body main.main-content section.offers div.container div.right div.offers div.offer {
     background: #fff;

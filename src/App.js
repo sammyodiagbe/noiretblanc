@@ -66,13 +66,27 @@ function App() {
                   </div>
                 </div>
                 <div className="offer">
-                  <h2 className="number">03</h2>
+                  <h2 className="number">02</h2>
                   <div className="details">
-                    <h3>Bookkeeping and Accounting</h3>
+                    <h3>Virtual CFO</h3>
                     <p>
-                      Accounts Receivable / Accounts Payable, Regular monthly
-                      enteries, Reconciliation of Bank and Credit card
-                      statements , Year-end close.
+                      We act as your strategic partner on an ongoing basis to
+                      help you grow your business. We provide you with the
+                      service of a Chief Finance Officer for a fraction of the
+                      real cost without compromising quality and standards.
+                    </p>
+                  </div>
+                </div>
+                <div className="offer">
+                  <h2 className="number">02</h2>
+                  <div className="details">
+                    <h3>Training & Learning</h3>
+                    <p>
+                      Manpower is the lifeblood of any organization. We provide
+                      the right training and development programs that will help
+                      ensure that both employees and owners of the business
+                      always have the right skills and information to function
+                      properly at all times.
                     </p>
                   </div>
                 </div>
@@ -81,6 +95,17 @@ function App() {
                   <div className="details">
                     <h3>Payroll</h3>
                     <p>Payroll Processing</p>
+                  </div>
+                </div>
+                <div className="offer">
+                  <h2 className="number">03</h2>
+                  <div className="details">
+                    <h3>Bookkeeping and Accounting</h3>
+                    <p>
+                      Accounts Receivable / Accounts Payable, Regular monthly
+                      enteries, Reconciliation of Bank and Credit card
+                      statements , Year-end close.
+                    </p>
                   </div>
                 </div>
               </div>

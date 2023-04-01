@@ -25,18 +25,21 @@ body {
   }
   footer.footer {
     padding: 1.5em $padding;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    svg {
-      width: 35px;
-    }
 
-    ul {
-      li {
-        list-style: none;
-        display: inline;
-        padding: 0 0.2em;
+    div.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      svg {
+        width: 35px;
+      }
+
+      ul {
+        li {
+          list-style: none;
+          display: inline;
+          padding: 0 0.2em;
+        }
       }
     }
   }
@@ -158,7 +161,8 @@ body {
 
     section.meet-yemi {
       padding: 2.5em $padding;
-
+      background: #eee;
+      // color: #fff;
       div.img-container {
         padding: 1.5em $padding;
         text-align: center;

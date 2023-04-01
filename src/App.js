@@ -4,7 +4,8 @@ import TwitterIcon from "./componentss/twiitter";
 import { useState } from "react";
 import image from "./assets/header-image.png";
 import yemiImage from "./assets/Headshot.JPG";
-import womamImage from "./assets/woman-business.png";
+import sendImg from "./assets/send-image.png";
+import sittingHuman from "./assets/sitting.png";
 import Nav from "./componentss/nav";
 import "./App.css";
 
@@ -39,7 +40,7 @@ function App() {
         <section className="offers">
           <div className="container">
             <div className="left">
-              <img src={womamImage} alt="Strong woman business" />
+              <img src={sittingHuman} alt="Strong woman business" />
             </div>
             <div className="right">
               <h2 className="title">What we offer.</h2>
@@ -86,29 +87,13 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="meet-yemi">
-          <div className="img-container">
-            <img
-              src={yemiImage}
-              alt="Yemi is a chartered professional accountant"
-            />
-          </div>
-          <div className="details">
-            <h2 className="title">Meet Yemi.</h2>
-            <p>
-              Yemi Olaleye is a Chartered Professional Accountant (CPA) with
-              over 16 years of experience in accounting and finance. Yemi is an
-              alumnus of the University of Liverpool, where he obtained his
-              Master’s degree in International Accounting and Finance Yemi’s
-              passion is to help businesses and individuals make better
-              financial decisions by providing relevant financial and business
-              advice
-            </p>
-          </div>
-        </section>
         <section className="contact">
           <div className="container">
             <div className="left">
+              <img
+                src={sendImg}
+                alt="Woman holding phone and sitting on floor"
+              />
               <h2 className="title">We would love to hear from you?</h2>
               <p>
                 To help us best serve your inquiry, we recommend that you first
@@ -156,6 +141,26 @@ function App() {
                   <button className="btn">Send message</button>
                 </div>
               </form>
+            </div>
+          </div>
+        </section>
+        <section className="meet-yemi">
+          <div className="img-container">
+            <img
+              src={yemiImage}
+              alt="Yemi is a chartered professional accountant"
+            />
+            <div className="details">
+              <h2 className="title">Meet Yemi.</h2>
+              <p>
+                Yemi Olaleye is a Chartered Professional Accountant (CPA) with
+                over 16 years of experience in accounting and finance. Yemi is
+                an alumnus of the University of Liverpool, where he obtained his
+                Master’s degree in International Accounting and Finance Yemi’s
+                passion is to help businesses and individuals make better
+                financial decisions by providing relevant financial and business
+                advice
+              </p>
             </div>
           </div>
         </section>

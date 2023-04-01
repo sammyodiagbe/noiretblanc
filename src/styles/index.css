@@ -25,6 +25,9 @@ body img {
 
 body footer.footer {
   padding: 1.5em 1em;
+}
+
+body footer.footer div.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,11 +39,11 @@ body footer.footer {
           align-items: center;
 }
 
-body footer.footer svg {
+body footer.footer div.container svg {
   width: 35px;
 }
 
-body footer.footer ul li {
+body footer.footer div.container ul li {
   list-style: none;
   display: inline;
   padding: 0 0.2em;
@@ -193,6 +196,7 @@ body main.main-content section.offers div.offer h2.number {
 
 body main.main-content section.meet-yemi {
   padding: 2.5em 1em;
+  background: #eee;
 }
 
 body main.main-content section.meet-yemi div.img-container {
@@ -326,7 +330,7 @@ body main.main-content section.contact div.container div.right form.contact-form
             justify-content: center;
   }
   body main.main-content section.offers div.container div.left img {
-    width: 800px;
+    width: 550px;
   }
   body main.main-content section.offers div.container div.right div.offers {
     display: -ms-grid;
@@ -353,8 +357,8 @@ body main.main-content section.contact div.container div.right form.contact-form
     display: -ms-grid;
     display: grid;
     padding: 4em 1em;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   body main.main-content section.meet-yemi div.img-container {
     padding: 0;
@@ -362,12 +366,19 @@ body main.main-content section.contact div.container div.right form.contact-form
   body main.main-content section.meet-yemi div.img-container img {
     width: 380px;
   }
-  body main.main-content section.meet-yemi div.details h2.title {
+  body main.main-content section.meet-yemi div.img-container div.details {
+    padding: 2vh 15vh;
+    text-align: center;
+  }
+  body main.main-content section.meet-yemi div.img-container div.details h2.title {
     font-size: 2em;
   }
-  body main.main-content section.meet-yemi div.details p {
+  body main.main-content section.meet-yemi div.img-container div.details p {
     font-size: 18px;
     line-height: 28px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
   }
   body main.main-content section.contact div.container {
     display: -ms-grid;
@@ -375,6 +386,12 @@ body main.main-content section.contact div.container div.right form.contact-form
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+  body main.main-content section.contact div.container div.left {
+    text-align: center;
+  }
+  body main.main-content section.contact div.container div.left img {
+    width: 400px;
   }
   body main.main-content section.contact div.container div.left h2.title {
     font-size: 32px;

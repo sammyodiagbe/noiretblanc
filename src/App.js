@@ -66,7 +66,7 @@ function App() {
                   </div>
                 </div>
                 <div className="offer">
-                  <h2 className="number">02</h2>
+                  <h2 className="number">03</h2>
                   <div className="details">
                     <h3>Virtual CFO</h3>
                     <p>
@@ -78,7 +78,7 @@ function App() {
                   </div>
                 </div>
                 <div className="offer">
-                  <h2 className="number">02</h2>
+                  <h2 className="number">04</h2>
                   <div className="details">
                     <h3>Training & Learning</h3>
                     <p>
@@ -91,14 +91,14 @@ function App() {
                   </div>
                 </div>
                 <div className="offer">
-                  <h2 className="number">04</h2>
+                  <h2 className="number">05</h2>
                   <div className="details">
                     <h3>Payroll</h3>
                     <p>Payroll Processing</p>
                   </div>
                 </div>
                 <div className="offer">
-                  <h2 className="number">03</h2>
+                  <h2 className="number">06</h2>
                   <div className="details">
                     <h3>Bookkeeping and Accounting</h3>
                     <p>

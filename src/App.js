@@ -22,7 +22,7 @@ function App() {
           <div className="container">
             <div className="left">
               <h1 className="title">
-                Professional Accounting and Bookeeping Services for your
+                Professionals in Accounting and Bookkeeping Services for your
                 business.
               </h1>
               <p>

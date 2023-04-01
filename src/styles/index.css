@@ -187,6 +187,19 @@ body main.main-content section.offers h2.title {
 
 body main.main-content section.offers div.offer {
   text-align: center;
+  background: #fff;
+  padding: 1em;
+  min-height: 250px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body main.main-content section.offers div.offer:hover {
+  background: #0d1b2a;
+  color: #fff;
 }
 
 body main.main-content section.offers div.offer h2,

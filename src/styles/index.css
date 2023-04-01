@@ -417,5 +417,13 @@ body main.main-content section.contact div.container div.right form.contact-form
     font-size: 18px;
     line-height: 28px;
   }
+  body main.main-content section.contact div.container div.right form.contact-form div.names-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

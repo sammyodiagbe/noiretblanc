@@ -146,6 +146,16 @@
               line-height: 28px;
             }
           }
+
+          div.right {
+            form.contact-form {
+              div.names-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 30px;
+              }
+            }
+          }
         }
       }
     }

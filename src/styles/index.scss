@@ -48,7 +48,7 @@ body {
   }
   nav.navigation {
     padding: $padding;
-    background: #0d1b2a;
+    background: linear-gradient(to left top, #0d1b2a, #162f49);
     color: #fff;
     position: sticky;
     top: 0;
@@ -109,7 +109,7 @@ body {
 
   main.main-content {
     section.introduction {
-      background: #0d1b2a;
+      background: linear-gradient(to left bottom, #0d1b2a, #162f49);
       color: #fff;
 
       div.container {

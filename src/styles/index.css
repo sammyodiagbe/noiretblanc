@@ -56,7 +56,8 @@ body footer.footer div.container ul li {
 
 body nav.navigation {
   padding: 1em;
-  background: #0d1b2a;
+  background: -webkit-gradient(linear, right bottom, left top, from(#0d1b2a), to(#162f49));
+  background: linear-gradient(to left top, #0d1b2a, #162f49);
   color: #fff;
   position: -webkit-sticky;
   position: sticky;
@@ -137,7 +138,8 @@ body nav.navigation div.container div.subnav ul li a {
 }
 
 body main.main-content section.introduction {
-  background: #0d1b2a;
+  background: -webkit-gradient(linear, right top, left bottom, from(#0d1b2a), to(#162f49));
+  background: linear-gradient(to left bottom, #0d1b2a, #162f49);
   color: #fff;
 }
 

@@ -1,7 +1,7 @@
 import FacebookIcon from "./componentss/facebook";
 import InstagramIcon from "./componentss/instagram";
 import TwitterIcon from "./componentss/twiitter";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import image from "./assets/header-image.png";
 import yemiImage from "./assets/Headshot.JPG";
 import sendImg from "./assets/send-image.png";
@@ -9,18 +9,20 @@ import sittingHuman from "./assets/sitting.png";
 import Nav from "./componentss/nav";
 import "./App.css";
 import { validateData } from "./utils";
+import emailjs from "@emailjs/browser";
 
 function App() {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
+  const [name, setFirstname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
+  const formRef = useRef();
+  const [sendingMessage, setSendingMessage] = useState(false);
 
-  const sendEmail = (event) => {
+  const sendEmail = async (event) => {
     event.preventDefault();
 
-    const checkData = validateData({ firstname, lastname, email, message });
+    const checkData = validateData({ name, email, message });
     const errors = Object.entries(checkData).length;
     console.log(errors);
     if (errors > 0) {
@@ -31,6 +33,19 @@ function App() {
     setErrors({});
 
     // send the email
+    try {
+      setSendingMessage(true);
+      const sendEmail = await emailjs.sendForm(
+        "service_g9zwgfk",
+        "template_xnnnbep",
+        formRef.current,
+        "0N4qbFxrD0vkKzOoY"
+      );
+      setSendingMessage(false);
+    } catch (error) {
+      console.log(error);
+      sendingMessage(false);
+    }
   };
   return (
     <>
@@ -145,31 +160,22 @@ function App() {
               </p>
             </div>
             <div className="right">
-              <form className="contact-form" onSubmit={sendEmail}>
-                <div className="names-container">
-                  <div className="input-container">
-                    <input
-                      type="text"
-                      placeholder="Firstname"
-                      className={`${errors.firstname ? "input-error" : ""}`}
-                      value={firstname}
-                      onChange={({ target }) => setFirstname(target.value)}
-                    />
-                  </div>
-                  <div className="input-container">
-                    <input
-                      type="text"
-                      placeholder="Lastname"
-                      value={lastname}
-                      onChange={({ target }) => setLastname(target.value)}
-                      className={`${errors.lastname ? "input-error" : ""}`}
-                    />
-                  </div>
+              <form className="contact-form" onSubmit={sendEmail} ref={formRef}>
+                <div className="input-container">
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    className={`${errors.name ? "input-error" : ""}`}
+                    value={name}
+                    onChange={({ target }) => setFirstname(target.value)}
+                  />
                 </div>
+
                 <div className="input-container">
                   <input
                     type="email"
                     placeholder="Email"
+                    name="user_email"
                     value={email}
                     onChange={({ target }) => setEmail(target.value)}
                     className={`${errors.email ? "input-error" : ""}`}
@@ -181,10 +187,16 @@ function App() {
                     placeholder="Your message..."
                     onChange={({ target }) => setMessage(target.value)}
                     className={`${errors.message ? "input-error" : ""}`}
+                    name="message"
                   ></textarea>
                 </div>
                 <div className="input-container">
-                  <button className="btn">Send message</button>
+                  <button
+                    className={`btn ${sendingMessage ? "sending-message" : ""}`}
+                    disabled={sendingMessage}
+                  >
+                    {sendingMessage ? "Sending Message" : "Send Message"}
+                  </button>
                 </div>
               </form>
             </div>

@@ -133,7 +133,7 @@ body {
 
           a {
             display: inline-block;
-            padding: $padding;
+            padding: $padding 2.5em;
             background: #3a86ff;
             color: #fff;
             text-decoration: none;
@@ -264,15 +264,25 @@ body {
                 background: #222;
                 color: #fff;
                 transition: all 0.5s;
+                font-weight: bold;
+                &:hover {
+                  background: #141414;
+                }
                 cursor: pointer;
                 &.sending-message {
                   background: #ead2ac;
                   color: #222;
+                  &:hover {
+                    background: #ead2ac;
+                  }
                 }
 
                 &.message-sent {
                   background: #57a773;
                   color: #fff;
+                  &:hover {
+                    background: #57a773;
+                  }
                 }
               }
             }

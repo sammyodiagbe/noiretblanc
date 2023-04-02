@@ -172,7 +172,7 @@ body main.main-content section.introduction div.container div.left p {
 
 body main.main-content section.introduction div.container div.left a {
   display: inline-block;
-  padding: 1em;
+  padding: 1em 2.5em;
   background: #3a86ff;
   color: #fff;
   text-decoration: none;
@@ -317,7 +317,12 @@ body main.main-content section.contact div.container div.right form.contact-form
   color: #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  font-weight: bold;
   cursor: pointer;
+}
+
+body main.main-content section.contact div.container div.right form.contact-form div.input-container button:hover {
+  background: #141414;
 }
 
 body main.main-content section.contact div.container div.right form.contact-form div.input-container button.sending-message {
@@ -325,9 +330,17 @@ body main.main-content section.contact div.container div.right form.contact-form
   color: #222;
 }
 
+body main.main-content section.contact div.container div.right form.contact-form div.input-container button.sending-message:hover {
+  background: #ead2ac;
+}
+
 body main.main-content section.contact div.container div.right form.contact-form div.input-container button.message-sent {
   background: #57a773;
   color: #fff;
+}
+
+body main.main-content section.contact div.container div.right form.contact-form div.input-container button.message-sent:hover {
+  background: #57a773;
 }
 
 @media screen and (min-width: 1240px) {

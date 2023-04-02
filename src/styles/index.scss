@@ -259,6 +259,16 @@ body {
                 width: 100%;
                 background: #222;
                 color: #fff;
+                transition: all 0.5s;
+                &.sending-message {
+                  background: orange;
+                  color: #222;
+                }
+
+                &.message-sent {
+                  background: limegreen;
+                  color: #fff;
+                }
               }
             }
           }

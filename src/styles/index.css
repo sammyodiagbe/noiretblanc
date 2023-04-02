@@ -311,6 +311,18 @@ body main.main-content section.contact div.container div.right form.contact-form
   width: 100%;
   background: #222;
   color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main.main-content section.contact div.container div.right form.contact-form div.input-container button.sending-message {
+  background: orange;
+  color: #222;
+}
+
+body main.main-content section.contact div.container div.right form.contact-form div.input-container button.message-sent {
+  background: limegreen;
+  color: #fff;
 }
 
 @media screen and (min-width: 1240px) {

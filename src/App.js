@@ -200,7 +200,7 @@ function App() {
                     className={`btn ${
                       sendingMessage ? "sending-message" : ""
                     } ${messageSent ? "message-sent" : ""}`}
-                    disabled={sendingMessage}
+                    disabled={sendingMessage || messageSent}
                   >
                     {sendingMessage
                       ? "Sending Message"

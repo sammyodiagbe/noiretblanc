@@ -49,7 +49,7 @@ function App() {
         setFirstname("");
         setEmail("");
         setMessage("");
-      }, 5000);
+      }, 3000);
     } catch (error) {
       console.log(error);
       sendingMessage(false);

@@ -8,12 +8,27 @@ import sendImg from "./assets/send-image.png";
 import sittingHuman from "./assets/sitting.png";
 import Nav from "./componentss/nav";
 import "./App.css";
+import { validateData } from "./utils";
 
 function App() {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState({});
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    const checkData = validateData({ firstname, lastname, email, message });
+    const errors = Object.entries(checkData).length;
+    if (errors > 0) {
+      setErrors(checkData);
+      return;
+    }
+
+    // send the email
+  };
   return (
     <>
       <Nav />
@@ -127,7 +142,7 @@ function App() {
               </p>
             </div>
             <div className="right">
-              <form className="contact-form">
+              <form className="contact-form" onSubmit={sendEmail}>
                 <div className="names-container">
                   <div className="input-container">
                     <input

@@ -36,7 +36,7 @@ function App() {
     // send the email
     try {
       setSendingMessage(true);
-      const sendEmail = await emailjs.sendForm(
+      await emailjs.sendForm(
         "service_g9zwgfk",
         "template_xnnnbep",
         formRef.current,
@@ -46,6 +46,9 @@ function App() {
       setMessageSent(true);
       setTimeout(() => {
         setMessageSent(false);
+        setFirstname("");
+        setEmail("");
+        setMessage("");
       }, 5000);
     } catch (error) {
       console.log(error);

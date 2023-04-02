@@ -51,7 +51,12 @@ body footer.footer div.container svg {
 body footer.footer div.container ul li {
   list-style: none;
   display: inline;
-  padding: 0 0.2em;
+  padding: 0 0.4em;
+  color: #666;
+}
+
+body footer.footer div.container ul li a svg {
+  width: 30px;
 }
 
 body nav.navigation {

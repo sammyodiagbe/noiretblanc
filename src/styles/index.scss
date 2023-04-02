@@ -41,7 +41,13 @@ body {
         li {
           list-style: none;
           display: inline;
-          padding: 0 0.2em;
+          padding: 0 0.4em;
+          color: #666;
+          a {
+            svg {
+              width: 30px;
+            }
+          }
         }
       }
     }

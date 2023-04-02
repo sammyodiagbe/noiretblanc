@@ -247,8 +247,8 @@ body {
 
               input.input-error,
               textarea.input-error {
-                border: 2px solid tomato;
-                color: tomato;
+                border: 2px solid #ee6352;
+                color: #ee6352;
               }
 
               button {
@@ -261,12 +261,12 @@ body {
                 color: #fff;
                 transition: all 0.5s;
                 &.sending-message {
-                  background: orange;
+                  background: #ead2ac;
                   color: #222;
                 }
 
                 &.message-sent {
-                  background: limegreen;
+                  background: #57a773;
                   color: #fff;
                 }
               }

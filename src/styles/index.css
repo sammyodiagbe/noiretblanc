@@ -300,8 +300,8 @@ body main.main-content section.contact div.container div.right form.contact-form
 
 body main.main-content section.contact div.container div.right form.contact-form div.input-container input.input-error,
 body main.main-content section.contact div.container div.right form.contact-form div.input-container textarea.input-error {
-  border: 2px solid tomato;
-  color: tomato;
+  border: 2px solid #ee6352;
+  color: #ee6352;
 }
 
 body main.main-content section.contact div.container div.right form.contact-form div.input-container button {
@@ -316,12 +316,12 @@ body main.main-content section.contact div.container div.right form.contact-form
 }
 
 body main.main-content section.contact div.container div.right form.contact-form div.input-container button.sending-message {
-  background: orange;
+  background: #ead2ac;
   color: #222;
 }
 
 body main.main-content section.contact div.container div.right form.contact-form div.input-container button.message-sent {
-  background: limegreen;
+  background: #57a773;
   color: #fff;
 }
 

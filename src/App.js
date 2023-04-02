@@ -22,13 +22,12 @@ function App() {
           <div className="container">
             <div className="left">
               <h1 className="title">
-                Professionals in Accounting and Bookkeeping Services for your
-                business.
+                Accounting and Bookkeeping Services for your business.
               </h1>
               <p>
-                Our team of highly Skilled accounting and financial professional
-                are available to help you grow your business by providing
-                high-quality bookeeping and accounting services.
+                Our team of highly Skilled accounting and financial
+                professionals are available to help you grow your business by
+                providing high-quality bookeeping and accounting services.
               </p>
               <a href="#contact">Send a message</a>
             </div>

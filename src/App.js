@@ -18,6 +18,7 @@ function App() {
   const [errors, setErrors] = useState({});
   const formRef = useRef();
   const [sendingMessage, setSendingMessage] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = async (event) => {
     event.preventDefault();
@@ -42,6 +43,10 @@ function App() {
         "0N4qbFxrD0vkKzOoY"
       );
       setSendingMessage(false);
+      setMessageSent(true);
+      setTimeout(() => {
+        setMessageSent(false);
+      }, 5000);
     } catch (error) {
       console.log(error);
       sendingMessage(false);
@@ -192,10 +197,16 @@ function App() {
                 </div>
                 <div className="input-container">
                   <button
-                    className={`btn ${sendingMessage ? "sending-message" : ""}`}
+                    className={`btn ${
+                      sendingMessage ? "sending-message" : ""
+                    } ${messageSent ? "message-sent" : ""}`}
                     disabled={sendingMessage}
                   >
-                    {sendingMessage ? "Sending Message" : "Send Message"}
+                    {sendingMessage
+                      ? "Sending Message"
+                      : messageSent
+                      ? "Message sent"
+                      : "Send message"}
                   </button>
                 </div>
               </form>

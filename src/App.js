@@ -22,10 +22,13 @@ function App() {
 
     const checkData = validateData({ firstname, lastname, email, message });
     const errors = Object.entries(checkData).length;
+    console.log(errors);
     if (errors > 0) {
       setErrors(checkData);
       return;
     }
+
+    setErrors({});
 
     // send the email
   };
@@ -148,6 +151,7 @@ function App() {
                     <input
                       type="text"
                       placeholder="Firstname"
+                      className={`${errors.firstname ? "input-error" : ""}`}
                       value={firstname}
                       onChange={({ target }) => setFirstname(target.value)}
                     />
@@ -158,6 +162,7 @@ function App() {
                       placeholder="Lastname"
                       value={lastname}
                       onChange={({ target }) => setLastname(target.value)}
+                      className={`${errors.lastname ? "input-error" : ""}`}
                     />
                   </div>
                 </div>
@@ -167,6 +172,7 @@ function App() {
                     placeholder="Email"
                     value={email}
                     onChange={({ target }) => setEmail(target.value)}
+                    className={`${errors.email ? "input-error" : ""}`}
                   />
                 </div>
                 <div className="input-container">
@@ -174,6 +180,7 @@ function App() {
                     value={message}
                     placeholder="Your message..."
                     onChange={({ target }) => setMessage(target.value)}
+                    className={`${errors.message ? "input-error" : ""}`}
                   ></textarea>
                 </div>
                 <div className="input-container">

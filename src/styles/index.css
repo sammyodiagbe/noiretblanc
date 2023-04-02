@@ -295,6 +295,13 @@ body main.main-content section.contact div.container div.right form.contact-form
   font-size: 1em;
   padding: 1.3em 1em;
   background-color: #eee;
+  border: 2px solid transparent;
+}
+
+body main.main-content section.contact div.container div.right form.contact-form div.input-container input.input-error,
+body main.main-content section.contact div.container div.right form.contact-form div.input-container textarea.input-error {
+  border: 2px solid tomato;
+  color: tomato;
 }
 
 body main.main-content section.contact div.container div.right form.contact-form div.input-container button {

@@ -242,6 +242,13 @@ body {
                 font-size: 1em;
                 padding: 1.3em $padding;
                 background-color: #eee;
+                border: 2px solid transparent;
+              }
+
+              input.input-error,
+              textarea.input-error {
+                border: 2px solid tomato;
+                color: tomato;
               }
 
               button {

@@ -139,6 +139,10 @@ body {
             text-decoration: none;
             border-radius: $border-radius;
             font-weight: bold;
+
+            &:hover {
+              background: #005ef5;
+            }
           }
         }
 
@@ -260,6 +264,7 @@ body {
                 background: #222;
                 color: #fff;
                 transition: all 0.5s;
+                cursor: pointer;
                 &.sending-message {
                   background: #ead2ac;
                   color: #222;

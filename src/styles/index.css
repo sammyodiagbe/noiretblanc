@@ -180,6 +180,10 @@ body main.main-content section.introduction div.container div.left a {
   font-weight: bold;
 }
 
+body main.main-content section.introduction div.container div.left a:hover {
+  background: #005ef5;
+}
+
 body main.main-content section.introduction div.container div.right {
   overflow: hidden;
 }
@@ -313,6 +317,7 @@ body main.main-content section.contact div.container div.right form.contact-form
   color: #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 body main.main-content section.contact div.container div.right form.contact-form div.input-container button.sending-message {
